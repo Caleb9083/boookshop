@@ -53,7 +53,7 @@ const booksResolvers = {
 
 const server = new ApolloServer({ typeDefs: schemas, resolvers: booksResolvers });
 
-server.listen(port).then(({ url, port }) => {
+server.listen( port ).then(({ url, port }) => {
     console.log(`Server ready at ${url}`)
 }).catch(err => console.log(err));
 
